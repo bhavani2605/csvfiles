@@ -1,0 +1,25 @@
+{
+	"name": "Trigger_9uw",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "SFTP to Azure Data lake",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 5,
+				"startTime": "2020-12-04T23:05:00Z",
+				"endTime": "2020-12-05T23:05:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

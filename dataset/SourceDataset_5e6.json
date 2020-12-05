@@ -1,0 +1,117 @@
+{
+	"name": "SourceDataset_5e6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "healthcare_samplefile.csv",
+				"container": "sample"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Goal",
+				"type": "String"
+			},
+			{
+				"name": "Target",
+				"type": "String"
+			},
+			{
+				"name": "Indicator",
+				"type": "String"
+			},
+			{
+				"name": "SeriesCode",
+				"type": "String"
+			},
+			{
+				"name": "SeriesDescription",
+				"type": "String"
+			},
+			{
+				"name": "GeoAreaCode",
+				"type": "String"
+			},
+			{
+				"name": "GeoAreaName",
+				"type": "String"
+			},
+			{
+				"name": "TimePeriod",
+				"type": "String"
+			},
+			{
+				"name": "Value",
+				"type": "String"
+			},
+			{
+				"name": "Time_Detail",
+				"type": "String"
+			},
+			{
+				"name": " UpperBound",
+				"type": "String"
+			},
+			{
+				"name": " LowerBound",
+				"type": "String"
+			},
+			{
+				"name": " BasePeriod",
+				"type": "String"
+			},
+			{
+				"name": " Source",
+				"type": "String"
+			},
+			{
+				"name": "FootNote",
+				"type": "String"
+			},
+			{
+				"name": "Nature",
+				"type": "String"
+			},
+			{
+				"name": "Units",
+				"type": "String"
+			},
+			{
+				"name": "[Age]",
+				"type": "String"
+			},
+			{
+				"name": "[IHR Capacity]",
+				"type": "String"
+			},
+			{
+				"name": "[Name of non-communicable disease]",
+				"type": "String"
+			},
+			{
+				"name": "[Reporting Type]",
+				"type": "String"
+			},
+			{
+				"name": "[Sex]",
+				"type": "String"
+			},
+			{
+				"name": "[Type of occupation]",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
